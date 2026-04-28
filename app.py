@@ -4,7 +4,7 @@ import pandas as pd
 
 # 1. Page Config (How it looks on a phone)
 st.set_page_config(page_title="Chevy's Dutch Translator", page_icon="🇳🇱")
-st.title('Chevy's Dutch Translator')
+st.title("Chevy's Dutch Translator")
 st.write("Translate instantly between English and Dutch!")
 
 # 2. Load your local words (Optional, but keeps your custom list alive)
