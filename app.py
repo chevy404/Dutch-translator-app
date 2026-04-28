@@ -28,13 +28,14 @@ word = st.text_input("Type your word here:").lower().strip()
 if word:
     result = None
     
-    # Check local list first
+   # Check local list first
     if mode == "English to Dutch":
+        # .strip() removes hidden spaces
         result = local_words.get(word)
     else:
-        # Search values for Dutch -> English
+        # Improved Dutch -> English search
         for eng, dut in local_words.items():
-            if dut == word:
+            if str(dut).strip().lower() == word:
                 result = eng
                 break
 
